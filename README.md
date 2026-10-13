@@ -1,3 +1,24 @@
+# K4-L3-DAY25-TrinhHoangTung-2A202602937-GpuFinOps
+
+**Bài nộp:** Trịnh Hoàng Tùng — MSSV 2A202602937 — ngày 13/10/2026.
+
+Đã hoàn thành M1–M5 và hai extension: **ngân sách reasoning** và **carbon-aware scheduling**.
+Kiểm tra: `python verify.py` **11/11 PASS**; `pytest -q` **15/15 PASS**.
+
+| File nộp | Nội dung |
+| --- | --- |
+| [outputs/report.md](outputs/report.md) | Chi phí trước/sau, breakdown, trả lời Guide, sustainability và hai extension |
+| [outputs/savings.png](outputs/savings.png) | Waterfall bốn đòn bẩy |
+| [outputs/focus_export.csv](outputs/focus_export.csv) | 50 dòng mẫu phân bổ chi phí FOCUS-style |
+| [outputs/writeup.md](outputs/writeup.md) | Bài viết ngắn trả lời đủ năm câu hỏi nộp bài |
+
+Inference giảm **6.488 → 1.126 USD/1M-token (82.6%)**. Kịch bản M5 giảm **27,133 → 14,626 USD/30 ngày (46.1%)**;
+giả định và giới hạn của tổng hợp right-sizing/idle được giải thích trong báo cáo.
+Chạy lại bằng Python trong `.venv`: `python -X utf8 data/generate.py`, `python -X utf8 missions/run_all.py`,
+`python -X utf8 verify.py`, `python -m pytest -q`.
+
+---
+
 # Lab 25 — Tối ưu hóa Chi phí GPU (GPU FinOps Workshop)
 
 > **AICB · Phase 2 · Track 2 (Infrastructure) · Day 25**
